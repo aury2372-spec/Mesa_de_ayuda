@@ -4,9 +4,11 @@
 **Asignatura:** Programación Aplicada · Proyecto integrador
 
 ## Integrantes
-- Nombre del integrante 1
-- Nombre del integrante 2
-- Nombre del integrante 3
+- DANILO ANDRÉS ARMENTA VANEGAS
+- AURY JULIANA IMBUS BELTRAN
+- JUAN ANDRES MAHECHA GRAJALES
+- JUAN DAVID TAPIAS ARCILA
+- ANGIE LORENA PARRA GOMEZ
 
 ## Descripción
 Aplicación web para registrar y dar seguimiento a solicitudes de soporte técnico (tickets). Un usuario crea un ticket con su prioridad (baja, media o alta); un técnico lo atiende y el administrador gestiona los tickets y los técnicos. Cada ticket pasa por los estados **abierto**, **en atención** y **cerrado**.
@@ -14,8 +16,8 @@ Aplicación web para registrar y dar seguimiento a solicitudes de soporte técni
 El backend está hecho con **Node.js y Express** y expone una API REST que responde en formato JSON. Los datos se guardan en memoria, así que se pierden al reiniciar el servidor.
 
 ## Enlaces
-- **Aplicación en Render:** https://PEGAR-AQUI-LA-URL.onrender.com
-- **Repositorio en GitHub:** https://github.com/PEGAR-AQUI-EL-REPOSITORIO
+- **Aplicación en Render:** https://mesa-de-ayuda-97dj.onrender.com/
+- **Repositorio en GitHub:** https://github.com/aury2372-spec/Mesa_de_ayuda 
 
 ## Vistas de la aplicación
 | Ruta | Quién la usa | Qué hace |
