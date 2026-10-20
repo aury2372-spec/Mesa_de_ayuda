@@ -178,21 +178,3 @@ curl -X POST $URL/api/salir -H "Authorization: Bearer $TOKEN"
 | 400 | Datos inválidos o incompletos |
 | 401 | Falta iniciar sesión o la contraseña es incorrecta |
 | 404 | El id o la ruta no existen |
-
-## Cómo ejecutarlo
-```bash
-npm install
-npm start
-```
-Luego abre http://localhost:3000. Para publicarlo en Render usa **Build Command:** `npm install` y **Start Command:** `node index.js`.
-
-## Estructura del proyecto
-```
-├── index.js              ← Servidor Express y API REST
-├── package.json          ← Dependencias y comando de arranque
-├── README.md             ← Este archivo
-├── vistas/               ← Páginas HTML (usuario, técnico, admin)
-└── public/
-    ├── css/estilos.css   ← Estilos (tema azul, negro y blanco)
-    └── js/               ← Lógica de cada vista
-```
