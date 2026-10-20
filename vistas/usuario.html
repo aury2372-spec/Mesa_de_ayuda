@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesa de Ayuda Técnica — Usuario</title>
+  <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+<main>
+  <h1>Mesa de Ayuda Técnica</h1>
+  <p>Registra un problema para que un técnico lo atienda.</p>
+
+  <section class="seccion">
+    <h2>Crear ticket</h2>
+    <form id="formulario">
+      <label for="nombre">Nombre del usuario</label>
+      <input type="text" id="nombre" name="nombreSolicitante" placeholder="Ingrese su nombre">
+
+      <label for="titulo">Título del problema</label>
+      <input type="text" id="titulo" name="titulo" required maxlength="120">
+
+      <label for="descripcion">Descripción del problema</label>
+      <textarea id="descripcion" name="descripcion" required></textarea>
+
+      <div class="fila">
+        <div>
+          <label for="prioridad">Prioridad</label>
+          <select id="prioridad" name="prioridad" required>
+            <option value="">Seleccione</option>
+            <option value="baja">Baja</option>
+            <option value="media">Media</option>
+            <option value="alta">Alta</option>
+          </select>
+        </div>
+        <div>
+          <label for="tecnico">Asignar técnico (opcional)</label>
+          <select id="tecnico" name="tecnicoId">
+            <option value="">Sin asignar</option>
+          </select>
+        </div>
+      </div>
+
+      <label for="fecha">Fecha solicitada (opcional)</label>
+      <input type="date" id="fecha" name="fecha">
+      <button type="submit">Crear ticket</button>
+      <p id="mensajeFormulario" role="status"></p>
+    </form>
+  </section>
+</main>
+<script src="/js/comun.js"></script>
+<script src="/js/usuario.js"></script>
+</body>
+</html>

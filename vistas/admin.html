@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesa de Ayuda Técnica — Admin</title>
+  <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+<main>
+  <h1>Panel de administración</h1>
+
+  <section class="seccion" id="acceso" hidden>
+    <h2>Acceso restringido</h2>
+    <form id="formAcceso">
+      <label for="clave">Contraseña</label>
+      <input type="password" id="clave" required autocomplete="current-password">
+      <button type="submit">Entrar</button>
+      <p id="mensajeAcceso" class="error" role="status"></p>
+    </form>
+  </section>
+
+  <div id="contenido" hidden>
+
+  <section class="seccion">
+    <h2>Todos los tickets</h2>
+    <div id="listaTickets" aria-live="polite">Cargando tickets...</div>
+  </section>
+
+  <section class="seccion">
+    <h2>Técnicos</h2>
+    <div id="listaTecnicos">Cargando técnicos...</div>
+  </section>
+    <button type="button" id="btnSalir" class="secundario">Cerrar sesión</button>
+  </div>
+</main>
+<script src="/js/comun.js"></script>
+<script src="/js/admin.js"></script>
+</body>
+</html>
